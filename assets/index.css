@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+}
+.card-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(16, 9, 143);
+  background: rgb(9, 18, 143);
+  background: linear-gradient(
+    0deg,
+    rgba(9, 18, 143, 1) 0%,
+    rgba(59, 4, 224, 1) 72%,
+    rgba(124, 0, 255, 1) 100%,
+    rgba(9, 9, 175, 1) 100%
+  );
+  width: 100%;
+  height: 375px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+@media (min-width: 500px) {
+  .card-principal {
+    border-radius: 30px;
+    width: 350px;
+    height: 430px;
+  }
+}
+.card-principal__azul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-principal__title {
+  font-family: "Hanken Grotesk";
+  font-weight: 700;
+  color: rgb(228, 227, 227);
+  margin: 0 0 40px;
+}
+
+.card-principal__circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background: rgb(9, 18, 143);
+  background: linear-gradient(
+    180deg,
+    rgba(9, 18, 143, 1) 0%,
+    rgba(9, 18, 143, 0.840795693277311) 38%,
+    rgba(9, 18, 143, 0.6055015756302521) 68%,
+    rgba(9, 18, 143, 0.19373686974789917) 100%
+  );
+}
+@media (min-width: 500px) {
+  .card-principal__circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+.title-card {
+  font-family: "Hanken Grotesk";
+  font-weight: 700;
+  font-size: 40px;
+}
+.txt-card {
+  font-family: "Hanken Grotesk";
+  font-weight: 700;
+  font-size: 13px;
+  color: rgba(171, 169, 169, 0.628);
+}
+
+.text-decoration-card {
+  font-family: "Hanken Grotesk";
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+
+.card-principal__txt {
+  margin-top: 5px;
+  color: rgb(212, 211, 211);
+  font-size: 15px;
+}
+
+/* Section 2  */
+.menu {
+  padding: 0 20px;
+}
+@media (min-width: 500px) {
+  .menu {
+    border-radius: 30px;
+    padding: 0 20px;
+    width: 350px;
+    height: 430px;
+    box-shadow: 10px 5px 5px rgba(193, 192, 192, 0.539);
+  }
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 500px) {
+  .menu-container {
+    gap: 13px;
+  }
+}
+.menu__title h2 {
+  font-family: "Hanken Grotesk";
+  font-weight: 700;
+  margin: 30px;
+  margin-left: 20px;
+  font-size: 20px;
+  justify-content: start;
+}
+.reaction,
+.memory,
+.visual,
+.verbal {
+  font-family: "Hanken Grotesk";
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 90%;
+  background-color: #fff6f6;
+  border-radius: 10px;
+}
+@media (min-width: 500px) {
+  .reaction,
+  .memory,
+  .visual,
+  .verbal {
+    width: 90%;
+  }
+}
+.reaction img,
+.visual img,
+.memory img,
+.verbal img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.reaction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reaction-container h2 {
+  font-size: 20px;
+}
+.reaction {
+  background-color: rgba(245, 91, 91, 0.224);
+}
+.reaction h2 {
+  color: rgb(236, 10, 10);
+}
+.memory {
+  background-color: rgba(255, 242, 0, 0.224);
+}
+
+.memory h2 {
+  color: rgb(245, 176, 17);
+}
+.verbal {
+  background-color: rgba(59, 244, 161, 0.224);
+}
+.verbal h2 {
+  color: rgb(8, 170, 81);
+}
+
+.visual {
+  background-color: rgba(48, 125, 240, 0.224);
+}
+.visual h2 {
+  color: rgb(4, 13, 182);
+}
+.text-span span {
+  margin: 0 5px;
+  font-size: 20px;
+}
+.text-span p {
+  font-size: 20px;
+}
+.butt {
+  font-family: "Hanken Grotesk";
+  font-weight: 700;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  color: aliceblue;
+  background-color: rgb(37, 37, 103);
+  border-radius: 30px;
+}
+@media (min-width: 500px) {
+  .butt {
+    width: 90%;
+  }
+}
+.butt:hover {
+  background-color: rgb(14, 142, 254);
+}
+@media (min-width: 500px) {
+  .responsive-content {
+    padding: 0 38px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
